@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stya Yur — Writing</title>
+    <link>https://styayur.github.io</link>
+    <atom:link href="https://styayur.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>A digital garden where engineering and literature grow side by side — essays, systems, marginalia and half-formed ideas, tended slowly over time.</description>
+    <language>en</language>
+    <item>
+      <title>The Architecture of Memory</title>
+      <link>https://styayur.github.io/writing/architecture-of-memory</link>
+      <guid isPermaLink="true">https://styayur.github.io/writing/architecture-of-memory</guid>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 GMT</pubDate>
+      <description>We keep saying memory is like a database. It is not. Memory is architecture — it is what a mind builds to stand on.</description>
+      <category>AI</category>
+      <category>Philosophy</category>
+      <category>Cognition</category>
+    </item>
+    <item>
+      <title>Invisible Systems</title>
+      <link>https://styayur.github.io/writing/invisible-systems</link>
+      <guid isPermaLink="true">https://styayur.github.io/writing/invisible-systems</guid>
+      <pubDate>Fri, 21 Aug 2026 00:00:00 GMT</pubDate>
+      <description>The best software is the software you never notice. An essay on the quiet layer between intention and outcome.</description>
+      <category>Systems</category>
+      <category>Engineering</category>
+      <category>Software</category>
+      <category>AI</category>
+    </item>
+    <item>
+      <title>Code as Prose</title>
+      <link>https://styayur.github.io/writing/code-as-prose</link>
+      <guid isPermaLink="true">https://styayur.github.io/writing/code-as-prose</guid>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Source code is a form of writing addressed to two audiences at once — the machine that executes it and the human who must live with it.</description>
+      <category>Programming</category>
+      <category>Literature</category>
+      <category>Language</category>
+    </item>
+    <item>
+      <title>In Defense of the Slow Web</title>
+      <link>https://styayur.github.io/writing/in-defense-of-the-slow-web</link>
+      <guid isPermaLink="true">https://styayur.github.io/writing/in-defense-of-the-slow-web</guid>
+      <pubDate>Thu, 18 Jun 2026 00:00:00 GMT</pubDate>
+      <description>Feeds optimize for the new. Gardens optimize for the true. A case for publishing like a gardener instead of a broadcaster.</description>
+      <category>Literature</category>
+      <category>Philosophy</category>
+      <category>Systems</category>
+      <category>Digital Garden</category>
+    </item>
+    <item>
+      <title>Reading with Machines</title>
+      <link>https://styayur.github.io/writing/reading-with-machines</link>
+      <guid isPermaLink="true">https://styayur.github.io/writing/reading-with-machines</guid>
+      <pubDate>Sat, 02 May 2026 00:00:00 GMT</pubDate>
+      <description>What happens to reading when the margin is inhabited by an intelligence that has read everything and understood nothing?</description>
+      <category>AI</category>
+      <category>Literature</category>
+      <category>Cognition</category>
+    </item>
+    <item>
+      <title>Field Notes No. 001 — Planting Season</title>
+      <link>https://styayur.github.io/writing/garden-log-001</link>
+      <guid isPermaLink="true">https://styayur.github.io/writing/garden-log-001</guid>
+      <pubDate>Sun, 12 Apr 2026 00:00:00 GMT</pubDate>
+      <description>The first entry in a garden log. Notes on starting a digital garden, and why the metaphor is not a metaphor.</description>
+      <category>Digital Garden</category>
+      <category>Notes</category>
+    </item>
+  </channel>
+</rss>

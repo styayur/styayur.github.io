@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://styayur.github.io/sitemap.xml
