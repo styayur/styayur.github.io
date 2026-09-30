@@ -1,5 +1,7 @@
 # Stya Yur — Digital Garden (GitHub Pages)
 
+> **Generated output repository. Do not edit site files manually.** Source changes belong in the linked source repository.
+
 This repository **hosts the published website** at
 [https://styayur.github.io](https://styayur.github.io/).
 
