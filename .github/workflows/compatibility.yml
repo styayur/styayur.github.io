@@ -15,12 +15,27 @@ jobs:
           node --input-type=module <<'JS'
           import assert from 'node:assert/strict';
           import fs from 'node:fs';
+          import vm from 'node:vm';
           const html = fs.readFileSync('index.html', 'utf8');
           assert.match(html, /http-equiv="refresh" content="0; url=https:\/\/styayur\.co\.uk\/"/);
           assert.match(html, /rel="canonical" href="https:\/\/styayur\.co\.uk\/"/);
-          assert.match(html, /<h1>Stya Yur<\/h1>/);
+          assert.match(html, /<h1>styayur<\/h1>/);
           assert.match(html, /<a href="https:\/\/styayur\.co\.uk\/">/);
           assert.equal(fs.existsSync('.nojekyll'), true);
+          for (const file of ['index.html', '404.html']) {
+            const page = fs.readFileSync(file, 'utf8');
+            const source = page.match(/<script>([\s\S]*?)<\/script>/)?.[1];
+            assert.ok(source);
+            for (const pathname of ['/', '/index.html', '/projects/', '/writing/architecture-of-memory/', '//other.invalid/path']) {
+              let destination;
+              const location = { pathname, search: '?governance-check=20261022', hash: '#evidence', replace: value => { destination = new URL(value); } };
+              vm.runInNewContext(source, { URL, window: { location } });
+              assert.equal(destination.origin, 'https://styayur.co.uk');
+              assert.equal(destination.pathname, pathname === '/index.html' ? '/' : pathname);
+              assert.equal(destination.search, location.search);
+              assert.equal(destination.hash, location.hash);
+            }
+          }
           const calligra = fs.readFileSync('calligraphy-studio/index.html', 'utf8');
           assert.ok(calligra.includes('content="0; url=https://styayur.github.io/calligra/"'));
           assert.ok(calligra.includes('rel="canonical" href="https://styayur.github.io/calligra/"'));
