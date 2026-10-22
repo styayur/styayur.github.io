@@ -21,4 +21,9 @@ jobs:
           assert.match(html, /<h1>Stya Yur<\/h1>/);
           assert.match(html, /<a href="https:\/\/styayur\.co\.uk\/">/);
           assert.equal(fs.existsSync('.nojekyll'), true);
+          const calligra = fs.readFileSync('calligraphy-studio/index.html', 'utf8');
+          assert.ok(calligra.includes('content="0; url=https://styayur.github.io/calligra/"'));
+          assert.ok(calligra.includes('rel="canonical" href="https://styayur.github.io/calligra/"'));
+          assert.ok(calligra.includes('<a href="https://styayur.github.io/calligra/">'));
+          assert.ok(calligra.includes('window.location.search + window.location.hash'));
           JS
