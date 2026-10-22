@@ -8,10 +8,16 @@
 
 | 入口 | 目标 | 机制 |
 | --- | --- | --- |
-| [根目录](https://styayur.github.io/)及 `/index.html` | [styayur.co.uk](https://styayur.co.uk) | 保留 HTML 跳转、canonical 与可读备用链接 |
+| [根目录](https://styayur.github.io/)及 `/index.html` | [styayur.co.uk](https://styayur.co.uk) | JavaScript 保留 query/fragment；`/index.html` 归一为 `/` |
+| `/projects/`、`/writing/` 等旧路径 | [styayur.co.uk](https://styayur.co.uk) 上的同一路径 | 最小 `404.html` 浏览器回退保留路径、query 和 fragment |
 | [`/calligraphy-studio/`](https://styayur.github.io/calligraphy-studio/) | [Calligra 演示](https://styayur.github.io/calligra/) | 兼容页面跳转时保留 query/hash |
 
 其他项目的 Pages 部署独立于根入口；仓库更名本身不会保留项目 Pages 地址。只要这些 URL 仍由此 Pages 部署提供，就保持仓库可用且不归档。替代机制实际验证前不要删除。
+
+目标 origin 固定，URL 参数不能选择其他主机。Pages 会先以 HTTP 404
+提供旧路径回退页，再由脚本跳到新页。关闭 JavaScript 时，静态刷新和链接
+只去主站首页；动态保留路径、query、fragment 需要 JavaScript。主站上原本
+不存在的路径仍可能返回 404。现有 Calligra 兼容页仍优先服务其项目 URL。
 
 ## 维护与验证
 

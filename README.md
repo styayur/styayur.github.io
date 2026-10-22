@@ -8,10 +8,18 @@ This repository keeps old GitHub Pages URLs usable. It is a minimal redirect ent
 
 | Entry | Destination | Mechanism |
 | --- | --- | --- |
-| [Root](https://styayur.github.io/) and `/index.html` | [styayur.co.uk](https://styayur.co.uk) | Existing HTML redirect, canonical URL and readable fallback link |
+| [Root](https://styayur.github.io/) and `/index.html` | [styayur.co.uk](https://styayur.co.uk) | JavaScript redirect preserves query/fragment; `/index.html` normalizes to `/` |
+| Old paths such as `/projects/` or `/writing/` | Same path on [styayur.co.uk](https://styayur.co.uk) | Minimal `404.html` browser fallback preserves path/query/fragment |
 | [`/calligraphy-studio/`](https://styayur.github.io/calligraphy-studio/) | [Calligra demo](https://styayur.github.io/calligra/) | Compatibility page preserves query/hash while redirecting |
 
 Other projects' Pages deployments are independent of the root redirect. A GitHub repository rename does not itself preserve a project's Pages URL. Keep this repository available and unarchived while its Pages deployment serves these entries; do not delete it before a tested replacement exists.
+
+The destination origin is fixed; URL parameters cannot select another host. Pages
+serves the old-path fallback with HTTP 404 before its script navigates to the new
+page. With JavaScript disabled, the static refresh/link goes to the main homepage;
+dynamic path/query/fragment preservation requires JavaScript. Unknown paths may
+still be missing on the canonical site. The existing Calligra compatibility page
+continues to take precedence for its project URL.
 
 ## Maintenance and verification
 
