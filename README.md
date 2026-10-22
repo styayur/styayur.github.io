@@ -5,7 +5,7 @@
 
 The live site is served by Cloudflare Pages at <https://styayur.co.uk>.
 
-- **Source of truth (private unified site):** `styayur/site`
+- **Source of truth:** maintained privately; this repository only provides URL compatibility.
 - **Historical engine source:** `styayur/digital-garden-engine`
 - **Profile front door:** `styayur/styayur`
 
@@ -21,3 +21,9 @@ On 2026-10-08, before the redirect metadata change, the root, index.html and the
 Calligraphy Studio, STEM Visual Explorer, mini-market, Musical Spinningtop,
 Nickspeare, LGXT Assistant and Windows New PC Setup project paths returned HTTP 200;
 21 referenced same-host assets also returned HTTP 200. Recheck after deployment.
+
+## Calligra compatibility entry
+
+`/calligraphy-studio/` retains the former demo entry and redirects to
+`https://styayur.github.io/calligra/`. GitHub repository redirects do not provide
+this Pages URL compatibility. Keep this entry while old project links are in use.
