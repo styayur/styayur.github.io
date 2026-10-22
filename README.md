@@ -1,29 +1,24 @@
-# Stya Yur — Legacy GitHub Pages deployment
+# styayur — legacy URL compatibility
 
-> **Legacy deployment repository.** Retained for rollback reference and URL
-> continuity. It is **not** a source of truth and does not maintain portfolio data.
+[简体中文](README.zh-CN.md) · [Current website](https://styayur.co.uk)
 
-The live site is served by Cloudflare Pages at <https://styayur.co.uk>.
+This repository keeps old GitHub Pages URLs usable. It is a minimal redirect entry, not an independently maintained portfolio or the production website source.
 
-- **Source of truth:** maintained privately; this repository only provides URL compatibility.
-- **Historical engine source:** `styayur/digital-garden-engine`
-- **Profile front door:** `styayur/styayur`
+## Routes
 
-This repository previously hosted a static portfolio on GitHub Pages. That data has
-been migrated into the private content repository; this repo is kept for history and rollback only.
+| Entry | Destination | Mechanism |
+| --- | --- | --- |
+| [Root](https://styayur.github.io/) and `/index.html` | [styayur.co.uk](https://styayur.co.uk) | Existing HTML redirect, canonical URL and readable fallback link |
+| [`/calligraphy-studio/`](https://styayur.github.io/calligraphy-studio/) | [Calligra demo](https://styayur.github.io/calligra/) | Compatibility page preserves query/hash while redirecting |
 
-Keep this small compatibility repository unarchived while GitHub Pages serves it.
-Its root and `/index.html` preserve the existing meta-refresh, with a canonical
-URL and a readable fallback link. Project Pages deployments in their own repositories
-remain independent; no project assets or paths are replaced by the root redirect.
+Other projects' Pages deployments are independent of the root redirect. A GitHub repository rename does not itself preserve a project's Pages URL. Keep this repository available and unarchived while its Pages deployment serves these entries; do not delete it before a tested replacement exists.
 
-On 2026-10-08, before the redirect metadata change, the root, index.html and the
-Calligraphy Studio, STEM Visual Explorer, mini-market, Musical Spinningtop,
-Nickspeare, LGXT Assistant and Windows New PC Setup project paths returned HTTP 200;
-21 referenced same-host assets also returned HTTP 200. Recheck after deployment.
+## Maintenance and verification
 
-## Calligra compatibility entry
+Edit only the relevant redirect entry and check the destination, fallback link, HTTPS and deployed behavior. Preserve the old URL and test query/fragment handling after deployment. Historical pre-change observations are evidence for their recorded date, not a substitute for a fresh check.
 
-`/calligraphy-studio/` retains the former demo entry and redirects to
-`https://styayur.github.io/calligra/`. GitHub repository redirects do not provide
-this Pages URL compatibility. Keep this entry while old project links are in use.
+The public [historical engine](https://github.com/styayur/digital-garden-engine) preserves renderer provenance and licenses; it is archived and does not produce the current website. The [GitHub Profile](https://github.com/styayur) is the public account entry.
+
+## License and support
+
+Retain the existing [LICENSE](LICENSE) and historical notices. Use [Issues](https://github.com/styayur/styayur.github.io/issues) for reproducible broken redirects, including the complete non-sensitive URL. No new site features, portfolio dataset or framework belong in this compatibility repository.
