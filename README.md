@@ -29,4 +29,4 @@ The public [historical engine](https://github.com/styayur/digital-garden-engine)
 
 ## License and support
 
-Retain the existing [LICENSE](LICENSE) and historical notices. Use [Issues](https://github.com/styayur/styayur.github.io/issues) for reproducible broken redirects, including the complete non-sensitive URL. No new site features, portfolio dataset or framework belong in this compatibility repository.
+Retain the existing [LICENSE](LICENSE) and historical notices. Use [Issues](https://github.com/styayur/styayur.github.io/issues) for reproducible broken redirects, including the complete non-sensitive URL. Report security-sensitive findings through [SECURITY.md](SECURITY.md), not a public issue. No new site features, portfolio dataset or framework belong in this compatibility repository.
