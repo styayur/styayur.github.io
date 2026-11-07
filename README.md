@@ -30,3 +30,7 @@ The public [historical engine](https://github.com/styayur/digital-garden-engine)
 ## License and support
 
 Retain the existing [LICENSE](LICENSE) and historical notices. Use [Issues](https://github.com/styayur/styayur.github.io/issues) for reproducible broken redirects, including the complete non-sensitive URL. Report security-sensitive findings through [SECURITY.md](SECURITY.md), not a public issue. No new site features, portfolio dataset or framework belong in this compatibility repository.
+
+## Security
+
+Use [SECURITY.md](SECURITY.md) for private vulnerability reporting. Public issues are appropriate only for reproducible redirect failures that contain no private query values, credentials or personal data. The redirect allowlist must not be expanded without a reviewed replacement test.
