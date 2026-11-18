@@ -29,7 +29,7 @@ jobs:
             const page = fs.readFileSync(file, 'utf8');
             const source = page.match(/<script>([\s\S]*?)<\/script>/)?.[1];
             assert.ok(source);
-            for (const pathname of ['/', '/index.html', '/projects/', '/writing/architecture-of-memory/', '//other.invalid/path']) {
+            for (const pathname of ['/', '/index.html', '/projects/', '/feed.xml', '/writing/', '/writing/architecture-of-memory/', '/writing/garden-log-001/', '//other.invalid/path']) {
               let destination;
               const location = { pathname, search: '?governance-check=20261022', hash: '#evidence', replace: value => { destination = new URL(value); } };
               vm.runInNewContext(source, { URL, window: { location } });
