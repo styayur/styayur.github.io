@@ -25,7 +25,7 @@ continues to take precedence for its project URL.
 
 Edit only the relevant redirect entry and check the destination, fallback link, HTTPS and deployed behavior. Preserve the old URL and test query/fragment handling after deployment. Historical pre-change observations are evidence for their recorded date, not a substitute for a fresh check.
 
-The public [historical engine](https://github.com/styayur/digital-garden-engine) preserves renderer provenance and licenses; it is archived and does not produce the current website. The [GitHub Profile](https://github.com/styayur) is the public account entry.
+The authoritative website entry is [styayur.co.uk](https://styayur.co.uk/). Historical renderer provenance and license notices remain in Git history. The [GitHub Profile](https://github.com/styayur) is the public account entry.
 
 ## License and support
 
