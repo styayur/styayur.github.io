@@ -23,7 +23,7 @@
 
 只修改对应重定向入口，并检查目标、备用链接、HTTPS 和实际部署。保留旧路径，在部署后测试 query/fragment；旧日期的观测不能代替新检查。
 
-公开的[历史引擎](https://github.com/styayur/digital-garden-engine)保留渲染器来源与许可，已经归档，不构建当前主站。[GitHub Profile](https://github.com/styayur)是公开账号入口。
+网站的权威入口是 [styayur.co.uk](https://styayur.co.uk/)。历史渲染器来源与许可声明仍保留在 Git 历史中。[GitHub Profile](https://github.com/styayur)是公开账号入口。
 
 ## 许可与反馈
 
